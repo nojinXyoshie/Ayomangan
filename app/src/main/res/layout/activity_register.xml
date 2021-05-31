@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="REGISTER"
+            android:textSize="16dip"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="#fff"
+            android:id="@+id/txt_username"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Nama lengkap"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="#fff"
+            android:id="@+id/txt_no_hp"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="no_hp"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="#fff"
+            android:id="@+id/txt_email"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="#fff"
+            android:id="@+id/txt_password"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:textSize="14sp"
+            android:password="true"
+            android:singleLine="true" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="#fff"
+            android:id="@+id/txt_confirm_password"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Comfirmation Password"
+            android:textSize="14sp"
+            android:password="true" />
+
+        <RelativeLayout
+
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar sebagai"
+                android:textSize="17sp"/>
+
+            <Spinner
+                android:layout_below="@+id/txt"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/spinner">
+
+            </Spinner>
+
+            <Button style="@style/btn"
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="#009e0f"
+                android:layout_below="@id/spinner"
+                android:text="Daftar"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

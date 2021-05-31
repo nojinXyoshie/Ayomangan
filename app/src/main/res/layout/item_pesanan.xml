@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:id="@+id/foto_makanan"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seblak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Makanan"
+            android:textSize="16sp"
+            android:id="@+id/nama_makanan"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/kuantitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Beli : 5"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/total_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Harga : 50000"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status : Dikirim"
+            android:textSize="14sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/cardview_dark_background"></View>
+    </LinearLayout>
+</LinearLayout>
